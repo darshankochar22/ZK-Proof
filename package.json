@@ -1,0 +1,49 @@
+{
+  "name": "zk-proof",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Zero-Knowledge Proof demonstration using ZK-SNARKs and Groth16 protocol",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "setup": "chmod +x setup.sh && ./setup.sh",
+    "compile": "hardhat --config hardhat.config.cjs compile",
+    "deploy:local": "hardhat --config hardhat.config.cjs run scripts/deploy-local.cjs --network localhost",
+    "deploy:sepolia": "hardhat --config hardhat.config.cjs run scripts/deploy.cjs --network sepolia",
+    "deploy:amoy": "hardhat --config hardhat.config.cjs run scripts/deploy.cjs --network amoy",
+    "deploy:zksync": "hardhat --config hardhat.config.cjs run scripts/deploy.cjs --network zkSyncSepolia",
+    "verify:sepolia": "hardhat --config hardhat.config.cjs run scripts/verify-on-chain.cjs --network sepolia",
+    "verify:amoy": "hardhat --config hardhat.config.cjs run scripts/verify-on-chain.cjs --network amoy",
+    "verify:zksync": "hardhat --config hardhat.config.cjs run scripts/verify-on-chain.cjs --network zkSyncSepolia",
+    "node": "hardhat --config hardhat.config.cjs node",
+    "console": "hardhat --config hardhat.config.cjs console"
+  },
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.4",
+    "snarkjs": "^0.7.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "ethers": "^6.15.0",
+    "globals": "^16.4.0",
+    "hardhat": "^2.26.3",
+    "vite": "npm:rolldown-vite@7.1.14"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.1.14"
+  }
+}

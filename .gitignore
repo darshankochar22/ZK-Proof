@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+build/
+artifacts/
+cache/
+typechain-types/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Generated circuit files
+circuit.r1cs
+circuit.wasm
+circuit.sym
+circuit_js/
+circuit_0000.zkey
+verification_key.json
+
+# Powers of tau
+powersOfTau28_hez_final_12.ptau
+*.ptau
+
+# Blockchain/Hardhat
+deployment-info.json
+deployment-local.json
+.openzeppelin/
+deployments/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+coverage.json
+
+# Misc
+.cache/
